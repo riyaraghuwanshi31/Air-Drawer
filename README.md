@@ -51,7 +51,7 @@ Draw in the air with your dominant hand and manipulate your creations in real-ti
     ```
 3.  **Use**: Grant camera permissions and raise your hands in view!
 
-## 👨‍💻 Developer
+---
 **Riya Raghuwanshi**  
 📸 Instagram: elevate.n.thrive
 
