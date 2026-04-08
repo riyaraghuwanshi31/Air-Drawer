@@ -70,5 +70,6 @@ This separation mimics real-world behavior and makes interactions feel more natu
 ---
 **Riya Raghuwanshi**  
 📸 Instagram: elevate.n.thrive ( https://www.instagram.com/elevate.n.thrive/ )
+
 🟥 Youtube: Elevate and Thrive ( https://www.youtube.com/@ElevateandThrive-e2/videos )
 
