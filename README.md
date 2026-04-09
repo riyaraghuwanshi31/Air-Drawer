@@ -1,43 +1,80 @@
-# 🌌 Neon Air Draw — AI Spatial Interface
+# ✨ AirCanvas AI — Gesture-Based Drawing System
 
-A high-performance, real-time AI air drawing web application that utilizes advanced hand tracking for a "Minority Report" style spatial interface. 
+An experimental web application that transforms your webcam into a **touchless drawing canvas**, allowing you to sketch and manipulate objects in mid-air using natural hand gestures.
 
-Draw in the air with your dominant hand and manipulate your creations in real-time with your non-dominant hand using intuitive gestures (Move, Scale, Rotate).
+This project explores the intersection of **computer vision, real-time rendering, and intuitive human-computer interaction**.
 
-## ✨ Key Features
+---
 
-*   **✋ Dual-Hand Interaction**: 
-    *   **Right Hand (Dominant)**: Handles high-precision drawing, selective erasing, and canvas clearing.
-    *   **Left Hand (Secondary)**: Dedicated to spatial transformations (Move, Scale, Rotate) of existing strokes.
-*   **📐 Non-Destructive Transforms**: Strokes retain their original coordinate data. All manipulations (TX, TY, Scale, Rotation) are applied at render time via matrix-based math.
-*   **🕶️ Minimalist Glassmorphism UI**: A premium, aesthetic interface with real-time HUD and visual feedback guides.
-*   **⚡ High Performance**: Native WebGL-based rendering engine optimized for 60FPS fluid interactions.
-*   **🌀 Physics-Based Interaction**: Smooth inertia on stroke movement and snap-to-angle (45°) for rotation.
-*   **📖 Gesture Guide**: Built-in interactive manual explaining every movement.
+## 🌟 What Makes This Project Different?
 
-## 🛠️ Tech Stack
+Unlike traditional drawing apps, this system introduces a **two-hand interaction model**:
 
-*   **Frontend**: React + Vite
-*   **Hand Tracking**: @mediapipe/hands
-*   **Animations**: Framer Motion
-*   **Icons**: Lucide React (with custom inline SVG fallbacks for brand icons)
-*   **Styling**: Vanilla CSS (Modern Glassmorphism & Neon Aesthetics)
+- One hand focuses on **creation**
+- The other handles **manipulation**
 
-## 🎮 Gesture Manual
+This separation mimics real-world behavior and makes interactions feel more natural and immersive.
 
-### ✍️ Drawing Hand (Right Hand)
-| Gesture | Action |
-|---|---|
-| ☝️ **Index Up** | Start drawing a stroke |
-| 🤏 **Pinch** | Selective eraser (intersects with fingertip path) |
-| ✊ **Fist** | Clear the entire canvas |
+---
 
-### 🖐️ Control Hand (Left Hand)
-| Gesture | Action | Visual Feedback |
-|---|---|---|
-| ✌️ **Two Fingers** | **Move** nearest stroke | Blue crosshair + glow |
-| 🤏 **Pinch & Spread** | **Scale** stroke size | Concentric rings + % label |
-| 🤚 **Open Palm** | **Rotate** stroke | Orange arc + snap points |
+## 🧠 Core Concepts Used
+
+- Real-time **hand landmark detection**
+- Gesture recognition and mapping
+- GPU-based rendering for performance
+- Mathematical transformations for object control
+
+---
+
+## 🎯 Key Capabilities
+
+✔ Draw freely in the air without touching any device  
+✔ Modify existing drawings using gestures  
+✔ Smooth and responsive interactions  
+✔ Real-time visual feedback system  
+
+---
+
+## 🛠️ Built With
+
+- React (UI development)
+- Vite (fast build tool)
+- MediaPipe (hand tracking)
+- WebGL (high-performance rendering)
+- Framer Motion (animations)
+
+---
+
+
+## ⚙️ How It Works
+
+1. The webcam captures live video input  
+2. Hand tracking detects finger positions  
+3. Gestures are interpreted into commands  
+4. Drawings are rendered and updated in real time  
+5. Transformations are applied dynamically without altering original data  
+
+---
+
+### ✍️ Drawing Hand (Primary Hand)
+
+| Gesture | Function |
+|--------|----------|
+| ☝️ Index Finger Up | Start drawing in air |
+| 🤏 Pinch | Erase part of drawing |
+| ✊ Closed Fist | Clear entire canvas |
+
+---
+
+### 🖐️ Control Hand (Secondary Hand)
+
+| Gesture | Function |
+|--------|----------|
+| ✌️ Two Fingers | Move selected drawing |
+| 🤏 Pinch & Spread | Resize (scale) drawing |
+| 🤚 Open Palm | Rotate drawing |
+
+---
 
 ## 🚀 Getting Started
 
@@ -51,9 +88,9 @@ Draw in the air with your dominant hand and manipulate your creations in real-ti
     ```
 3.  **Use**: Grant camera permissions and raise your hands in view!
 
-## 👨‍💻 Developer
-**Riya Raghuwanshi**  
-📸 Instagram: elevate.n.thrive
-
 ---
-*Built with passion for AI and Spatial Computing.*
+**Riya Raghuwanshi**  
+📸 Instagram: elevate.n.thrive ( https://www.instagram.com/elevate.n.thrive/ )
+
+🟥 Youtube: Elevate and Thrive ( https://www.youtube.com/@ElevateandThrive-e2/videos )
+
