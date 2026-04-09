@@ -45,6 +45,7 @@ This separation mimics real-world behavior and makes interactions feel more natu
 
 ---
 
+
 ## ⚙️ How It Works
 
 1. The webcam captures live video input  
@@ -52,6 +53,26 @@ This separation mimics real-world behavior and makes interactions feel more natu
 3. Gestures are interpreted into commands  
 4. Drawings are rendered and updated in real time  
 5. Transformations are applied dynamically without altering original data  
+
+---
+
+### ✍️ Drawing Hand (Primary Hand)
+
+| Gesture | Function |
+|--------|----------|
+| ☝️ Index Finger Up | Start drawing in air |
+| 🤏 Pinch | Erase part of drawing |
+| ✊ Closed Fist | Clear entire canvas |
+
+---
+
+### 🖐️ Control Hand (Secondary Hand)
+
+| Gesture | Function |
+|--------|----------|
+| ✌️ Two Fingers | Move selected drawing |
+| 🤏 Pinch & Spread | Resize (scale) drawing |
+| 🤚 Open Palm | Rotate drawing |
 
 ---
 
